@@ -11,6 +11,9 @@ eureka:
       defaultZone: http://127.0.0.1:8000/eureka/
 zuul:
   prefix: /cloud-course
+  host:
+    connect-timeout-millis: 15000
+    socket-timeout-millis: 60000
   routes:
     course:
       path: /course-api/**
@@ -20,3 +23,7 @@ zuul:
       path: /user-api/**
       serviceId: eureka-client-user-service
       strip-prefix: false
+# ribbon timeout should be smaller than zuul timeout
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
