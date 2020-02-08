@@ -15,21 +15,17 @@ spring:
     properties:
       hibernate.format_sql: true
     open-in-view: false
-    datasource:
-      url: jdbc:mysql://127.0.0.1:3306/cloud_course?autoReconnect=true
-      username: root
-      password: lizhimysql
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      tomcat:
-        max-active: 4
-        min-idle: 2
-        initial-size: 2
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cloud_course?autoReconnect=true
+    username: root
+    password: lizhimysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    tomcat:
+      max-active: 4
+      min-idle: 2
+      initial-size: 2
 
 eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8000/eureka/
-
-feign:
-  hystrix:
-    enabled: true
