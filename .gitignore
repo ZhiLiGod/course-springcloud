@@ -2,3 +2,5 @@
 cloud-course.iml
 
 course-eureka/target/
+course-service/course-common/target/
+course-service/course-service-api/target/
