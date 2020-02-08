@@ -8,12 +8,14 @@ import java.util.Collections;
 import java.util.List;
 
 @Component
-public class CourseClientHystrix {
+public class CourseClientHystrix implements CourseClient {
 
+  @Override
   public CourseInfo getCourseInfo(Long id) {
     return CourseInfo.invalid();
   }
 
+  @Override
   public List<CourseInfo> getCourseInfos(CourseInfosRequest request) {
     return Collections.emptyList();
   }
