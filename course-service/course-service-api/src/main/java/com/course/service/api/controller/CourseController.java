@@ -15,7 +15,7 @@ public class CourseController {
   @Autowired
   private CourseService courseService;
 
-  @GetMapping("/{id}/course")
+  @GetMapping("/{id}")
   public CourseInfo getCourseInfo(@PathVariable final Long id) {
     return courseService.getCourseInfo(id);
   }
