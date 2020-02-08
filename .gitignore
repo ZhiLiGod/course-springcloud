@@ -5,3 +5,4 @@ course-eureka/target/
 course-service/course-common/target/
 course-service/course-service-api/target/
 course-service/user-service-api/target/
+course-zuul/target/
