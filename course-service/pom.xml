@@ -15,6 +15,7 @@
     <modules>
         <module>course-common</module>
         <module>course-service-api</module>
+        <module>user-service-api</module>
     </modules>
 
     <packaging>pom</packaging>
