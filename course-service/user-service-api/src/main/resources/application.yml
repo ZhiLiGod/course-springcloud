@@ -7,7 +7,7 @@ spring:
   main:
     allow-bean-definition-overriding: true
   application:
-    name: eureka-client-user
+    name: eureka-client-user-service
   jpa:
     show-sql: true
     hibernate:

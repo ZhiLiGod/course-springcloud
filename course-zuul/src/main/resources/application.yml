@@ -9,3 +9,14 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8000/eureka/
+zuul:
+  prefix: /cloud-course
+  routes:
+    course:
+      path: /course-api/**
+      serviceId: eureka-client-course-service
+      strip-prefix: false
+    user:
+      path: /user-api/**
+      serviceId: eureka-client-user-service
+      strip-prefix: false
